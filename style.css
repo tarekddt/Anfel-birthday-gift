@@ -1,0 +1,10 @@
+body {
+    background-color: #5e4b8b; /* Light purple or another color */
+}
+audio {
+    position: fixed;
+    top: 10px;  /* Distance from the top */
+    right: 10px;  /* Distance from the right */
+    z-index: 9999;  /* Ensure it stays on top */
+  }
+  
