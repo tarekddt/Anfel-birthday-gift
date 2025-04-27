@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Anfel💗</title>
+  <style>
+    body {
+      background-color: #f3e8ff;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 30px;
+      color: #5e4b8b;
+      background-image: url('https://i.imgur.com/6IUB8nR.png');
+      background-size: cover;
+      background-repeat: repeat;
+      background-position: center;
+      animation: fadeIn 2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2.5em;
+      font-weight: bold;
+      animation: slideIn 1s ease-out;
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateY(-50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    .question {
+      margin: 30px 0;
+      padding: 20px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: scaleUp 0.5s ease-out;
+    }
+
+    @keyframes scaleUp {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    button {
+      display: block;
+      margin: 10px auto;
+      padding: 14px 20px;
+      background-color: #d1b3ff;
+      border: none;
+      border-radius: 15px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #c29eff;
+      transform: scale(1.05);
+    }
+
+    .message {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #ff66a3;
+      animation: fadeIn 1s ease-out;
+    }
+
+    #letter {
+      display: none;
+      margin-top: 30px;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-size: 18px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .heart {
+      font-size: 2em;
+      color: #ff6699;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Confetti CSS */
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ff66a3;
+      animation: fall 3s ease-in-out infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-50vh) rotate(0deg);
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+      }
+    }
+
+    /* Position the audio bar */
+    audio {
+      position: fixed;
+      top: 10px;  /* Distance from the top */
+      right: 10px;  /* Distance from the right */
+      z-index: 9999;  /* Ensure it stays on top */
+    }
+  </style>
+</head>
+<body>
+
+<h1>💗HAPPY Birthday Anfel💗</h1>
+
+<!-- Audio Section Start -->
+<div style="margin-bottom: 40px;">
+  <audio controls autoplay muted loop>
+      <source src="BFB OST  Places.mp3" type="audio/mpeg">
+      <source src="BFB OST  Places.mp3" type="audio/wav">
+  </audio>
+</div>
+<!-- Audio Section End -->
+
+<div class="question" id="q1">
+  <h2>Who loves the other person more?</h2>
+  <button onclick="checkAnswer(1, 'wrong')">You</button>
+  <button onclick="checkAnswer(1, 'wrong')">Me</button>
+  <button onclick="checkAnswer(1, 'correct')">Both equally</button>
+  <button onclick="checkAnswer(1, 'wrong')">Neither</button>
+  <div class="message" id="m1" style="display:none;">(just because it's your birthday🤭)</div>
+</div>
+
+<div class="question" id="q2" style="display:none;">
+  <h2>What's my favorite thing about you?</h2>
+  <button onclick="checkAnswer(2, 'wrong')">Your smile</button>
+  <button onclick="checkAnswer(2, 'wrong')">Your heart</button>
+  <button onclick="checkAnswer(2, 'wrong')">Your jokes</button>
+  <button onclick="checkAnswer(2, 'correct')">Everything</button>
+  <div class="message" id="m2" style="display:none;">(you better got that at the first try🥰)</div>
+</div>
+
+<div class="question" id="q3" style="display:none;">
+  <h2>What do I love about you?</h2>
+  <button onclick="checkAnswer(3, 'wrong')">Your kindness</button>
+  <button onclick="checkAnswer(3, 'wrong')">Your heart</button>
+  <button onclick="checkAnswer(3, 'wrong')">The way you care</button>
+  <button onclick="checkAnswer(3, 'correct')">All of the above</button>
+  <div class="message" id="m3" style="display:none;">(i can name 100 more if you want💗)</div>
+</div>
+
+<div id="letter">
+  <h2 class="heart">💌</h2>
+  <p>
+    I just wanted to say...<br><br>
+    HAPPY BIRTHDAY, MY LOVE 💗🎂
+    I wish you a great day and a wonderful life. I wish nothing but the best for you because you deserve every beautiful thing in this world. You mean so much to me, and knowing you has been one of the best things that ever happened to me. You are the sweetest, cutest, kindest, and loveliest person I’ve ever known. Thank you for everything you’ve given me. I hope we can stay together for as long as possible, and I wish you never have to do anything bad for yourself. Enjoy your special day to the fullest!
+    
+    I LOVE YOU SOOO MUCH. MUAH 💗
+    
+    
+  </p>
+</div>
+
+<script>
+// Generate confetti
+function generateConfetti() {
+  const colors = ['#ff66a3', '#ff9966', '#66ff66', '#ffcc00', '#66ccff'];
+  for (let i = 0; i < 100; i++) {
+    const confetti = document.createElement('div');
+    confetti.classList.add('confetti');
+    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    confetti.style.left = `${Math.random() * 100}vw`;
+    confetti.style.animationDuration = `${Math.random() * 3 + 2}s`;
+    document.body.appendChild(confetti);
+  }
+}
+
+let currentQuestion = 1;
+
+function checkAnswer(question, result) {
+  if (result === 'correct') {
+    document.getElementById('m' + question).style.display = 'block';
+    setTimeout(() => {
+      document.getElementById('q' + question).style.display = 'none';
+      if (question < 3) {
+        document.getElementById('q' + (question + 1)).style.display = 'block';
+      } else {
+        document.getElementById('letter').style.display = 'block';
+        generateConfetti();  // Confetti appears after reaching the letter
+      }
+    }, 1500);
+  } else {
+    alert('Try again! 😅');
+  }
+}
+</script>
+
+</body>
+</html>
